@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikhiltrading3002 - Indian Stock Market Trading Platform</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .section {
+            margin-bottom: 50px;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        .chart {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .course, .learning, .tools, .trending, .testimonials {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        .course h2, .learning h2, .tools h2, .trending h2, .testimonials h2 {
+            color: #007bff;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+        .price {
+            font-size: 28px;
+            color: #28a745;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+        .payment {
+            background-color: #e9ecef;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            border-left: 5px solid #007bff;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #28a745;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+        .cta-button:hover {
+            background-color: #218838;
+        }
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+        .whatsapp-float a {
+            display: block;
+            width: 70px;
+            height: 70px;
+            background-color: #25d366;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 70px;
+            color: white;
+            text-decoration: none;
+            font-size: 35px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        .whatsapp-float a:hover {
+            background-color: #128c7e;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .highlight {
+            background-color: #fff3cd;
+            padding: 10px;
+            border-radius: 5px;
+            border-left: 5px solid #ffc107;
+        }
+        .testimonial {
+            font-style: italic;
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Nikhiltrading3002</h1>
+        <p>Your Ultimate Gateway to Mastering Indian Stock Market Trading: Nifty 50, Banknifty, Sensex, Equity, and Options. Unlock Profits Like Never Before!</p>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#charts">Charts</a>
+        <a href="#trading-tools">Trading Tools</a>
+        <a href="#news">Market News</a>
+        <a href="#learning">Learning Resources</a>
+        <a href="#trending">Trending Topics</a>
+        <a href="#courses">Courses</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="home" class="section">
+            <h2>About Us</h2>
+            <p>At Nikhiltrading3002, we empower traders with cutting-edge tools, real-time insights, and expert guidance on Nifty 50, Banknifty, Sensex, equity, and options trading. From zero to hero, learn how to turn small investments into massive profits. Join thousands who've transformed their financial futures!</p>
+            <div class="highlight">
+                <p><strong>Limited-Time Offer:</strong> Enroll in our course today and get exclusive bonuses worth Rs. 500!</p>
+            </div>
+        </section>
+        
+        <section id="charts" class="section">
+            <h2>Advanced Real-Time Charts with Support, Resistance & Liquidity Levels</h2>
+            <div class="chart">
+                <!-- Embedding a real chart from TradingView for Nifty 50 -->
+                <iframe src="https://www.tradingview.com/widgetembed/?frameElementId=tradingview_12345&symbol=NSE%3ANIFTY&interval=D&hidesidetoolbar=1&symboledit=1&saveimage=1&toolbarbg=f1f3f6&studies=%5B%5D&theme=dark&style=1&timezone=Etc%2FUTC&withdateranges=1&showpopupbutton=1&studies_overrides=%7B%7D&overrides=%7B%7D&enabled_features=%5B%5D&disabled_features=%5B%5D&locale=en&utm_source=www.nikhiltrading3002.com&utm_medium=widget&utm_campaign=chart&utm_term=NSE%3ANIFTY" width="100%" height="400" frameborder="0" allowtransparency="true" allowfullscreen></iframe>
+                <p>Live Nifty 50 chart with interactive tools. Key Levels for Today:</p>
+                <ul>
+                    <li><strong>Support Levels:</strong> 22,000 (Major), 21,800 (Minor) – Buy zones for reversals.</li>
+                    <li><strong>Resistance Levels:</strong> 22,500 (Major), 22,300 (Minor) – Sell zones for pullbacks.</li>
+                    <li><strong>Liquidity Zones:</strong> High volume at 22,200-22,400; watch for breakouts or breakdowns.</li>
+                </ul>
+                <p>Use the chart to add custom studies: Right-click > Add Indicator > Support/Resistance Lines. Switch to Banknifty or Sensex for similar analysis.</p>
+            </div>
+        </section>
+        
+        <section id="trading-tools" class="section">
+            <div class="tools">
+                <h2>Essential Trading Tools for Success</h2>
+                <p>Master every tool a trader needs:</p>
+                <ul>
+                    <li><strong>Options Calculator:</strong> Calculate premiums, Greeks, and payoffs for Nifty 50 options.</li>
+                    <li><strong>Equity Screener:</strong> Filter by fundamentals and technicals.</li>
+                    <li><strong>Risk Management Tools:</strong> Position sizing, stop-loss calculators.</li>
+                    <li><strong>Backtesting Software:</strong> Simulate strategies on historical data.</li>
+                    <li><strong>Portfolio Tracker:</strong> Real-time P&L monitoring.</li>
+                    <li><strong>Charting Tools:</strong> Patterns, indicators, Fibonacci levels.</li>
+                    <li><strong>News Aggregator:</strong> Instant market updates.</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section id="news" class="section">
+            <h2>Market News & Analysis</h2>
+            <p>Daily insights:</p>
+            <ul>
+                <li>Nifty 50 summaries and Banknifty volatility.</li>
+                <li>Options strategies and Sensex trends.</li>
+                <li>Economic data impacting trades.</li>
+            </ul>
+        </section>
+        
+        <section id="learning" class="section">
+            <div class="learning">
+                <h2>Comprehensive Learning Resources: From Basics to Advanced Mastery</h2>
+                <p>Everything a trader must know, explained step-by-step for quick, profitable learning:</p>
+                
+                <h3>Basics of Stock Market</h3>
+                <ul>
+                    <li>Equity Trading: Buying/selling shares on NSE/BSE.</li>
+                    <li>Indices: Nifty 50 (top 50), Banknifty (banks), Sensex (30 large-caps).</li>
+                    <li>Market Hours: 9:15 AM - 3:30 PM IST.</li>
+                    <li>Order Types: Market, Limit, Stop-Loss.</li>
+                </ul>
+                
+                <h3>Options Trading Fundamentals</h3>
+                <ul>
+                    <li>Calls/Puts: Calls for upside, puts for downside.</li>
+                    <li>Strike, Expiry, Premium: Selection based on outlook.</li>
+                    <li>Greeks: Delta (price sensitivity), Theta (time decay), Vega (volatility).</li>
+                    <li>Intrinsic/Extrinsic Value: Real vs. time value.</li>
+                </ul>
+                
+                <h3>Strategies for Profit</h3>
+                <ul>
+                    <li>Buying Options: Limited risk, high reward.</li>
+                    <li>Selling Options: Premium income, but unlimited risk.</li>
+                    <li>Spreads: Bull Call, Bear Put, Iron Condor.</li>
+                    <li>Hedging: Protect portfolios with options.</li>
+                </ul>
+                
+                <h3>Technical Analysis</h3>
+                <ul>
+                    <li>Chart Patterns: Head & Shoulders, Double Tops.</li>
+                    <li>Indicators: SMA/EMA, RSI, Bollinger Bands.</li>
+                    <li>Support/Resistance: Key levels for trades.</li>
+                    <li>Candlesticks: Doji, Hammer for signals.</li>
+                </ul>
+                
+                <h3>Fundamental Analysis</h3>
+                <ul>
+                    <li>Ratios: P/E, P/B, ROE.</li>
+                    <li>Earnings: Quarterly impacts.</li>
+                    <li>Economic Data: GDP, Inflation.</li>
+                </ul>
+                
+                <h3>Risk Management & Psychology</h3>
+                <ul>
+                    <li>Position Sizing: 1-2% risk per trade.</li>
+                    <li>Stop-Loss: Fixed or trailing.</li>
+                    <li>Emotional Control: Avoid FOMO.</li>
+                    <li>Journaling: Track and improve.</li>
+                </ul>
+                
+                <h3>Expiry Day Tactics: Zero to Hero Trades</h3>
+                <ul>
+                    <li><strong>Understanding Expiry:</strong> Options expire on last Thursday; time decay accelerates.</li>
+                    <li><strong>Zero-Hero Strategy:</strong> Buy cheap OTM options early, sell near expiry if in-the-money for massive gains (e.g., 10x returns).</li>
+                    <li><strong>Big Profits:</strong> Focus on high IV days; use gamma scalping or theta harvesting.</li>
+                    <li><strong>Stop-Loss Trailing:</strong> Set initial SL at 20% loss; trail up as profit grows (e.g., move SL to breakeven after 50% gain).</li>
+                    <li><strong>Examples:</strong> On expiry, if Nifty hits 22,200, sell calls bought at 21,800 for 5x profit. Always exit before 3 PM.</li>
+                    <li><strong>Risks:</strong> Avoid holding to expiry; use alerts for levels.</li>
+                </ul>
+                
+                <h3>Advanced Topics</h3>
+                <ul>
+                    <li>Arbitrage: Risk-free profits.</li>
+                    <li>Liquidity: Trade high-volume strikes.</li>
+                    <li>Taxes: LTCG/STCG rules.</li>
+                    <li>Paper Trading: Practice first.</li>
+                </ul>
+                <p><em>Pro Tip:</em> Combine TA and FA for best results. Our course dives deeper!</p>
+            </div>
+        </section>
+        
+        <section id="trending" class="section">
+            <div class="trending">
+                <h2>Trending Topics in Trading</h2>
+                <ul>
+                    <li>AI Predictions for Nifty 50.</li>
+                    <li>Crypto-Stock Integration.</li>
+                    <li>Volatility in Banknifty.</li>
+                    <li>ESG Investing in Sensex.</li>
+                    <li>Expiry Day Millionaires.</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section id="courses" class="section">
+            <div class="course">
+                <h2>Paid Course: Options Buying and Selling Mastery</h2>
+                <p>Transform into a pro trader! Learn to make Rs. 50,000+ monthly with our proven strategies.</p>
+                <h3>Course Content:</h3>
+                <ul>
+                    <li>Basics to Advanced Options.</li>
+                    <li>Strategies, Greeks, Risk Mgmt.</li>
+                    <li>Expiry Day Zero-Hero Trades.</li>
+                    <li>Live Examples & Simulations.</li>
+                </ul>
+                <p class="price">Price: Rs. 999 for One Month Access</p>
+                <a href="#contact" class="cta-button">Enroll Now & Start Earning!</a>
+                <div class="payment">
+                    <h4>Payment Mode</h4>
+                    <p>Secure UPI Payment. Send screenshot for instant access.</p>
+                    <p><strong>UPI ID:</strong> nikhilthakre390-3@oksbi | <strong>Amount:</strong> Rs. 999</p>
+                    <p><strong>Note:</strong> "Options Course"</p>
+                </div>
+                <p><strong>WhatsApp:</strong> 9022138478 | <strong>Email:</strong> nikhilthakre390@gmail.com</p>
+            </div>
+        </section>
+        
+        <section id="testimonials" class="section">
+            <div class="testimonials">
+                <h2>What Our Students Say</h2>
+                <div class="testimonial">"From zero knowledge to 10x profits on expiry day! Nikhil's course is a game-changer." - Rahul K.</div>
+                <div class="testimonial">"Learned stop-loss trailing and made Rs. 1 lakh in a month. Highly recommend!" - Priya S.</div>
+                <div class="testimonial">"Professional guidance on Nifty 50. Best investment ever." - Amit T.</div>
+            </div>
+        </section>
+        
+        <section id="contact" class="section">
+            <h2>Contact Us</h2>
+            <p>Ready to start? Reach out:</p>
+            <p><strong>WhatsApp:</strong> 9022138478</p>
+            <p><strong>Email:</strong> nikhilthakre390@gmail.com</p>
+        </section>
+    </div>
+    
+    <!-- WhatsApp Floating Button -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/9022138478" target="_blank" title="Chat with us on WhatsApp">
+            &#9742;
+        </a>
+    </div>
+    
+    <footer>
+        <p>&copy; 2023 Nikhiltrading3002. All rights reserved. Trading involves risk. Consult a financial advisor.</p>
+    </footer>
+</body>
+</html>
